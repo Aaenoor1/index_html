@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame On</title>
+
+    <style>
+  body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    color: #ff6b00;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+
+  section {
+    background-color: #2e2e2e;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  article {
+    border-bottom: 2px solid #d72638;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"], input[type="reset"] {
+    background-color: #ff6b00;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #d72638;
+  }
+</style>
+</head>
+<body>
+<header>
+    <img src="stock_images/images.jpg" alt="Menu logo" id="hearder-img" style="width:100px;height:100px;">
+
+    <h1>Flame On</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Place Your Order</a></li>
+        </ul>
+    </nav>
+</header>   
+<main>
+    <section id="menu">
+        <h2>Menu</h2>
+
+       <article>
+        <img src="stock_images/pizza.jpg" alt="Pizza" style="width:200px;height:200px;">
+            <h3>Pizza</h3>
+            <p>Our pizzas are made with fresh ingredients and a variety of toppings to choose from. <em>starts from $6.49 </em></p>
+            <ul>
+                <li>Margherita</li>
+                <li>Pepperoni</li>
+                <li>Vegetarian</li>
+            </ul>
+       </article>
+         <hr>
+       <article>
+          <img src="stock_images/burger.jpg" alt="Burger" style="width:200px;height:200px;">
+                <h3>Burgers</h3>
+                <p>Juicy burgers grilled to perfection with a selection of toppings. <em>starts from $5.99 </em></p>
+                <ul>
+                 <li>Cheeseburger</li>
+                 <li>Bacon Burger</li>
+                 <li>Veggie Burger</li>
+                </ul>
+            </article>
+            <hr>
+
+         <article>
+            <img src="stock_images/chicken.jpg" alt="Broasted Chicken" style="width:200px;height:200px;">
+                <h3>Broasted Chicken</h3>
+                <p>Our broasted chicken is crispy on the outside and juicy on the inside. <em>starts from $7.99 </em></p>
+                <ul>
+                    <li>Original</li>
+                    <li>Spicy</li>
+                    <li>BBQ</li>
+                </ul>   
+            </article>
+            <hr>
+
+            <article>
+                <img src="stock_images/sides.jpg" alt="Sides" style="width:200px;height:200px;">
+                <h3>Sides</h3>
+                <p>Complement your meal with our delicious sides. <em>starts from $2.99 </em></p>
+                <ul>
+                    <li>French Fries</li>
+                    <li>Onion Rings</li>
+                    <li>Garlic Bread</li>
+                </ul>
+            </article>
+            <hr>
+
+            <article>
+                <img src="stock_images/drinks.jpg" alt="Drinks" style="width:200px;height:200px;">
+                <h3>Drinks</h3>
+                <p>Quench your thirst with our refreshing drinks. <em>starts from $1.49 </em></p>
+                <ul>
+                    <li>Coke</li>
+                    <li>Sprite</li>
+                    <li>Water</li>
+                </ul>
+            </article>
+            <hr>
+
+            <article>
+                <img src="stock_images/desserts.jpg" alt="Desserts" style="width:200px;height:200px;">
+                <h3>Desserts</h3>
+                <p>End your meal on a sweet note with our desserts. <em>starts from $3.49 </em></p>
+                <ul>
+                    <li>Chocolate Cake</li>
+                    <li>Ice Cream</li>
+                    <li>Fruit Salad</li>
+                </ul>
+                </article>
+                <hr>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+
+            <label for="pizza">Pizza:</label>
+            <select id="pizza" name="pizza">
+                <option value="null">null</option>
+                <option value="margherita">Margherita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+                <label for="pizza-quantity">Quantity:</label>
+            <input type="number" id="pizza-quantity" name="pizza-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="burger">Burger:</label>
+            <select id="burger" name="burger">
+                <option value="null">null</option>
+                <option value="cheeseburger">Cheeseburger</option>
+                <option value="bacon-burger">Bacon Burger</option>
+                <option value="veggie-burger">Veggie Burger</option>
+            </select>
+              <label for="burger-quantity">Quantity:</label>
+            <input type="number" id="burger-quantity" name="burger-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="chicken">Broasted Chicken:</label>
+            <select id="chicken" name="chicken">   
+                <option value="null">null</option> 
+                <option value="original">Original</option>
+                <option value="spicy">Spicy</option>
+                <option value="bbq">BBQ</option>        
+            </select>
+              <label for="chicken-quantity">Quantity:</label>
+            <input type="number" id="chicken-quantity" name="chicken-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="sides">Sides:</label>
+            <select id="sides" name="sides">    
+                <option value="null">null</option>
+                <option value="fries">French Fries</option>
+                <option value="onion-rings">Onion Rings</option>
+                <option value="garlic-bread">Garlic Bread</option>
+            </select>
+              <label for="sides-quantity">Quantity:</label>
+            <input type="number" id="sides-quantity" name="sides-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="drinks">Drinks:</label>
+            <select id="drinks" name="drinks">    
+                <option value="null">null</option>
+                <option value="coke">Coke</option>
+                <option value="sprite">Sprite</option>
+                <option value="water">Water</option>
+            </select>
+              <label for="drinks-quantity">Quantity:</label>
+            <input type="number" id="drinks-quantity" name="drinks-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="desserts">Desserts:</label>
+            <select id="desserts" name="desserts">   
+                <option value="null">null</option> 
+                <option value="chocolate-cake">Chocolate Cake</option>
+                <option value="ice-cream">Ice Cream</option>
+                <option value="fruit-salad">Fruit Salad</option>
+            </select>
+              <label for="desserts-quantity">Quantity:</label>
+            <input type="number" id="desserts-quantity" name="desserts-quantity" min="1" max="100" value="1">
+            <br><br>
+           
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Any special requests?"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Order">
+            <input type="reset" value="Reset Form">
+
+        </form>
+    </section>
+    <br><br><hr>
+<footer>
+    <p>&copy; 2023 Flame On. All rights reserved.</p>
+    <p>Made by: Aaenoor</p>
+</footer>
+</body>
+</html>
